@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Person mickey = new Person("Mickey Mouse", "67", "mickey@warner.com");
+        Person mickey = new Person("Mickey Mouse", 67, "mickey@warner.com");
         activityMainBinding.setPerson(mickey);
     }
 }

@@ -6,10 +6,10 @@ import androidx.databinding.Bindable;
 public class Person extends BaseObservable {
 
     private String name;
-    private String age;
+    private int age;
     private String emailAddress;
 
-    public Person(String name, String age, String emailAddress) {
+    public Person(String name, int age, String emailAddress) {
         this.name = name;
         this.age = age;
         this.emailAddress = emailAddress;
@@ -26,11 +26,11 @@ public class Person extends BaseObservable {
     }
 
     @Bindable
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
         notifyPropertyChanged(BR.age);
     }
