@@ -39,18 +39,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.453"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
+            app:layout_constraintTop_toBottomOf="@+id/welcome_message"
+            tools:text="NAME"/>
 
         <TextView
             android:id="@+id/age_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@={person.age}"
-            app:layout_constraintEnd_toEndOf="name_field"
+            app:layout_constraintEnd_toEndOf="@+id/name_field"
             app:layout_constraintHorizontal_bias="0.453"
-            app:layout_constraintStart_toStartOf="@id/name_field"
+            app:layout_constraintStart_toStartOf="@+id/name_field"
             app:layout_constraintTop_toBottomOf="@+id/name_field"
             android:paddingBottom="10dp"
+            tools:text="AGE"
             />
 
         <TextView
@@ -58,11 +60,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@={person.emailAddress}"
-            app:layout_constraintEnd_toEndOf="@id/age_field"
+            app:layout_constraintEnd_toEndOf="@+id/age_field"
             app:layout_constraintHorizontal_bias="0.953"
-            app:layout_constraintStart_toStartOf="@id/age_field"
+            app:layout_constraintStart_toStartOf="@+id/age_field"
             app:layout_constraintTop_toBottomOf="@+id/age_field"
             android:paddingBottom="10dp"
+            tools:text="EMAIL"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
