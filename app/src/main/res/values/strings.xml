@@ -3,7 +3,11 @@
     <string name="name">name</string>
     <string name="email">email</string>
     <string name="age">age</string>
+    <string name="ageFormat">`` + age</string>
     <string name="data_binding_demo">Data Binding Demo</string>
     <string name="textview">TextView</string>
     <string name="input_name">Name</string>
+    <string name="enter_age">enter age</string>
+    <string name="enter_an_email">enter an email</string>
+    <string name="enter_a_name">enter a name</string>
 </resources>
